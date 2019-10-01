@@ -33,3 +33,9 @@ variable "record_type" {
   type        = string
   default     = "A"
 }
+
+variable "zone_id" {
+  description = "Zone ID"
+  type        = string
+  default     = ""
+}
