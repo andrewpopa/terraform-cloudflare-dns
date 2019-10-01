@@ -1,12 +1,12 @@
 provider "cloudflare" {
-  email = var.api_email
-  token = var.api_token
+  email   = var.api_email
+  api_key = var.api_token
 }
 
 resource "cloudflare_record" "record_name" {
-  domain = var.cf_domain
-  name   = var.cf_sub_domain
-  value  = var.pointer
-  type   = var.record_type
-  ttl    = 1
+  zone_id = var.cf_domain
+  name    = var.cf_sub_domain
+  value   = var.pointer
+  type    = var.record_type
+  ttl     = 1
 }
