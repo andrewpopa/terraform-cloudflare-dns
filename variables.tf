@@ -6,6 +6,7 @@ variable "api_email" {
 variable "api_token" {
   description = "API token for cloudflare"
   type = string
+  default = ""
 }
 
 variable "cf_domain" {
