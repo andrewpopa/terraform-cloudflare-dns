@@ -1,3 +1,3 @@
 output "fqdn" {
-  value = join(".", [var.cf_sub_domain, var.cf_domain])
+  value = join(".", [var.name, var.domain])
 }

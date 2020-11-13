@@ -1,41 +1,45 @@
-variable "api_email" {
-  description = "API email address"
+variable "email" {
   type        = string
-  default     = ""
+  description = "api email in cloudflare"
 }
 
-variable "api_token" {
-  description = "API token for cloudflare"
+variable "api_key" {
   type        = string
-  default     = ""
+  description = "cloudflare api key"
 }
 
-variable "cf_domain" {
-  description = "Domain name which will be used"
+variable "account_id" {
   type        = string
-  default     = "domain.com"
-}
-
-variable "cf_sub_domain" {
-  description = "Sub-domain which will be used"
-  type        = string
-  default     = "subdomain"
-}
-
-variable "pointer" {
-  description = "Point to infrastructure - ip or lb"
-  type        = string
-  default     = "8.8.8.8"
-}
-
-variable "record_type" {
-  description = "DNS records type - A, CNAME"
-  type        = string
-  default     = "A"
+  description = "cloudflare account id"
 }
 
 variable "zone_id" {
-  description = "Zone ID"
   type        = string
-  default     = ""
+  description = "cloudflare zone id"
+}
+
+variable "name" {
+  type        = string
+  description = "subdomain for zone which will be provisioned"
+}
+
+variable "value" {
+  type        = string
+  description = "ip address"
+}
+
+variable "type" {
+  type        = string
+  description = "dns records type - A, CNAME"
+}
+
+variable "ttl" {
+  type        = number
+  description = "zone ttl"
+  default     = "3600"
+}
+
+variable "domain" {
+  type        = string
+  description = "domain - fqdn for output"
 }
