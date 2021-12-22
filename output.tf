@@ -1,7 +1,3 @@
-output "fqdn" {
-  value = join(".", [var.name, var.domain])
-}
-
 output "id" {
   value = cloudflare_record.this.id
 }
