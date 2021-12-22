@@ -1,9 +1,9 @@
-provider "cloudflare" {
+#provider "cloudflare" {
   #version    = "~> 2.0"
-  email      = var.email
-  api_key    = var.api_key
-  account_id = var.account_id
-}
+  #email      = var.email
+  #api_key    = var.api_key
+  #account_id = var.account_id
+#}
 
 resource "cloudflare_record" "record" {
   zone_id = var.zone_id
