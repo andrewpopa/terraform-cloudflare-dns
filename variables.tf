@@ -1,17 +1,17 @@
-variable "email" {
-  type        = string
-  description = "api email in cloudflare"
-}
+#variable "email" {
+#  type        = string
+#  description = "api email in cloudflare"
+#}
 
-variable "api_key" {
-  type        = string
-  description = "cloudflare api key"
-}
+#variable "api_key" {
+#  type        = string
+#  description = "cloudflare api key"
+#}
 
-variable "account_id" {
-  type        = string
-  description = "cloudflare account id"
-}
+#variable "account_id" {
+#  type        = string
+#  description = "cloudflare account id"
+#}
 
 variable "zone_id" {
   type        = string
