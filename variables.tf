@@ -23,8 +23,3 @@ variable "ttl" {
   description = "zone ttl"
   default     = "3600"
 }
-
-variable "domain" {
-  type        = string
-  description = "domain - fqdn for output"
-}
