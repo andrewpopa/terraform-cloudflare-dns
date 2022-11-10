@@ -1,3 +1,3 @@
-output "fqdn" {
-  value = module.dns.fqdn
-}
+/*output "hostname" {
+  value = module.dns.hostname
+}*/
